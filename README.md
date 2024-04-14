@@ -18,6 +18,9 @@ Here are some ideas to get you started:
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nsfinter
 )](https://github.com/anuraghazra/github-readme-stats)
 
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=nsfinter)]
+(https://github.com/anuraghazra/github-readme-stats)
+
 <p align="left">
   <a href="https://github.com/nsfinter">
     <img height="20" src="https://komarev.com/ghpvc/?username=nsfinter" />
