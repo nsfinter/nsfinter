@@ -77,7 +77,6 @@ body select {
 }
 
 .main-content {
-  padding-top: 20px;
   padding-bottom: 7rem;
   background-color: #fff;
 }
@@ -721,6 +720,9 @@ footer .pagetop .pagetop-arrow {
   transform: rotate(45deg);
 }
 
+.service-item {
+  background-color: rgba(244, 248, 250, 0.8);
+}
 .service-item h3 {
   counter-increment: title_no;
   position: relative;
@@ -732,7 +734,6 @@ footer .pagetop .pagetop-arrow {
   font-weight: 600;
   border-bottom: 5px solid #3C379E;
   margin-bottom: 50px;
-  background-color: rgba(244, 248, 250, 0.8);
   font-size: 2.5rem;
 }
 @media screen and (min-width: 576px) {
@@ -785,12 +786,13 @@ footer .pagetop .pagetop-arrow {
   margin-left: auto;
   padding: 20px;
   padding-bottom: 0;
-  background-color: rgba(244, 248, 250, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  font-size: 1rem;
 }
 @media screen and (min-width: 782px) {
   .service-item-container .service-item-wrapper {
-    width: 700px;
+    width: 750px;
     padding: 25px;
     padding-bottom: 0;
   }
@@ -803,7 +805,7 @@ footer .pagetop .pagetop-arrow {
   margin-bottom: 15px;
   padding-bottom: 10px;
   padding-left: 55px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: #3C379E;
 }
@@ -857,14 +859,12 @@ footer .pagetop .pagetop-arrow {
 }
 .service-item-container .service-item-wrapper .service-item-text {
   width: 100%;
-  font-size: 1rem;
 }
 .service-item-container .service-item-wrapper .service-item-text p {
   margin-bottom: 20px;
 }
 .service-item-container .service-item-wrapper .service-item-text ul {
   position: relative;
-  font-size: 0.9rem;
   margin-bottom: 20px;
 }
 .service-item-container .service-item-wrapper .service-item-text ul li {
@@ -881,6 +881,12 @@ footer .pagetop .pagetop-arrow {
 
 /* --- */
 /* Company */
+.home-company {
+  background-image: url("img/content-bg.jpg");
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
+
 .box-company dl {
   display: flex;
   justify-content: flex-start;
@@ -952,6 +958,11 @@ footer .pagetop .pagetop-arrow {
   letter-spacing: 0.06em;
 }
 
+.company {
+  background-image: url("img/content-bg.jpg");
+  background-color: rgba(255, 255, 255, 0.9);
+  background-blend-mode: lighten;
+}
 .company .company-info-wrapper {
   display: flex;
   flex-direction: column;
@@ -1238,7 +1249,7 @@ aside.sidebar .box-archive .item .sidebar-list .select::after {
 /* --- */
 /* contact */
 .contact {
-  max-width: 610px;
+  max-width: 800px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;

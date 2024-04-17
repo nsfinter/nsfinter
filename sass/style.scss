@@ -105,7 +105,6 @@ body {
 }
 
 .main-content {
-    padding-top: 20px;
     padding-bottom: 7rem;
     background-color: #fff;
     section {
@@ -711,6 +710,7 @@ footer {
 }
 
 .service-item {
+    background-color: rgba(244, 248, 250, 0.8);
     h3 {
         counter-increment: title_no;
         position: relative;
@@ -722,7 +722,6 @@ footer {
         font-weight: 600;
         border-bottom: 5px solid $base_color;
         margin-bottom: 50px;
-        background-color: rgba(244, 248, 250, 0.8);
         font-size: 2.5rem;
         @include media(sm) {
             padding-left: 9rem;
@@ -765,10 +764,11 @@ footer {
         margin-left: auto;
         padding: 20px;
         padding-bottom: 0;
-        background-color: rgba(244, 248, 250, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
+        font-size: 1.0rem;
         @include media(md) {
-            width: 700px;
+            width: 750px;
             padding: 25px;
             padding-bottom: 0;    
             &.reverse {
@@ -780,7 +780,7 @@ footer {
             margin-bottom: 15px;
             padding-bottom: 10px;
             padding-left: 55px;
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: bold;
             color: $base_color;
             &::before {
@@ -832,13 +832,11 @@ footer {
         }
         .service-item-text {
             width: 100%;
-            font-size: 1.0rem;
             p {
                 margin-bottom: 20px;
             }
             ul {
                 position: relative;
-                font-size: 0.9rem;
                 margin-bottom: 20px;
                 li {
                     padding-left: 25px;
@@ -858,6 +856,12 @@ footer {
 /* --- */
 
 /* Company */
+.home-company {
+    background-image: url("img/content-bg.jpg");
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
+}
+
 .box-company {
     dl {
         display: flex;
@@ -928,6 +932,9 @@ footer {
 }
 
 .company {
+    background-image: url("img/content-bg.jpg");
+    background-color:rgba(255,255,255,0.9);
+    background-blend-mode:lighten;
     .company-info-wrapper {
         display: flex;
         flex-direction: column;
@@ -1204,7 +1211,7 @@ aside.sidebar {
 
 /* contact */
 .contact {
-    max-width: 610px;
+    max-width: 800px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
