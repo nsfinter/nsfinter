@@ -33,8 +33,11 @@ $breakpoints: (
 
 /* Root */
 html {
-    font-size: 100%;
+    font-size: 90%;
     scroll-behavior: smooth;
+    @include media(sm) {
+        font-size: 100%;
+    }
 }
 /* --- */
 
@@ -99,9 +102,12 @@ body {
 .main-header-content,
 .main-footer-content,
 .sub-footer-content {
-    padding: 0px 40px;
+    padding: 0px 10px;
     margin: 0px auto;
     max-width: 1120px;
+    @include media(sm) {
+        padding: 0px 40px;        
+    }
 }
 
 .main-content {
@@ -290,7 +296,7 @@ body {
 }
 
 .dnav {
-    width: 50%;
+    width: 75%;
     height: 100vh;
     padding-top: 78px;
     background-color: rgba( 255, 255, 255, 0.9 );
@@ -300,6 +306,9 @@ body {
     right: -120%;
     transition: all 0.6s;
     z-index: 2;
+    @include media(sm) {
+        width: 50%;
+    }
     &.is-open {
         right: 0;
     }
@@ -574,8 +583,8 @@ footer {
         height: 50px;
         width: 50px;
         position: fixed;
-        right: 30px;
-        bottom: 30px;
+        right: 13px;
+        bottom: 90px;
         background: rgba(255, 255, 255, 0.5);
         border: solid 2px #aaa;
         border-radius: 50%;
@@ -1101,7 +1110,7 @@ aside.sidebar {
                 font-size: 1.2rem;
                 /* 基本のセレクトボックスのカスタマイズ */
                 .select {
-                    background: #ddd;
+                    background: rgba(245, 245, 245, 0.9);
                     color: #333;
                     height: 35px;
                     width: 100%;
