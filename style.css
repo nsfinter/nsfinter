@@ -737,15 +737,15 @@ footer .pagetop .pagetop-arrow {
 }
 
 .service-item {
-  background-color: rgba(244, 248, 250, 0.8);
+  padding-top: 2rem !important;
 }
 .service-item h3 {
   counter-increment: title_no;
   position: relative;
   width: 100%;
   color: #3C379E;
-  padding-top: 4rem;
-  padding-bottom: 3.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 1rem;
   font-weight: 600;
   border-bottom: 5px solid #3C379E;
@@ -760,6 +760,8 @@ footer .pagetop .pagetop-arrow {
 @media screen and (min-width: 782px) {
   .service-item h3 {
     font-size: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
     padding-left: 14rem;
   }
 }
@@ -767,25 +769,28 @@ footer .pagetop .pagetop-arrow {
   display: none;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-style: italic;
+  color: rgba(230, 230, 230, 0.5);
 }
 @media screen and (min-width: 576px) {
   .service-item h3::before {
     display: block;
     content: "0" counter(title_no);
     position: absolute;
-    top: 0.8rem;
+    top: -2.2rem;
     left: 10px;
     font-size: 6rem;
   }
 }
 @media screen and (min-width: 782px) {
   .service-item h3::before {
-    top: -2.4rem;
+    top: -3.4rem;
     font-size: 10rem;
   }
 }
 
 .service-item-container {
+  background-color: #F4F8FA;
+  border-radius: 10px;
   margin-bottom: 70px;
 }
 .service-item-container:nth-last-child(1) {
@@ -794,6 +799,9 @@ footer .pagetop .pagetop-arrow {
 @media screen and (min-width: 782px) {
   .service-item-container {
     padding-top: 180px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
   }
 }
 .service-item-container .service-item-wrapper {
@@ -802,7 +810,6 @@ footer .pagetop .pagetop-arrow {
   margin-left: auto;
   padding: 20px;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   font-size: 1rem;
 }
@@ -811,6 +818,7 @@ footer .pagetop .pagetop-arrow {
     width: 750px;
     padding: 25px;
     padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .service-item-container .service-item-wrapper.reverse {
     margin-left: 0;
@@ -821,7 +829,7 @@ footer .pagetop .pagetop-arrow {
   margin-bottom: 15px;
   padding-bottom: 10px;
   padding-left: 55px;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #3C379E;
 }
@@ -861,6 +869,7 @@ footer .pagetop .pagetop-arrow {
   .service-item-container .service-item-wrapper .service-item-img {
     position: absolute;
     width: 650px;
+    padding: 25px;
     z-index: -1;
   }
   .service-item-container .service-item-wrapper .service-item-img.reverse {

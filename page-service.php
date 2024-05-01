@@ -22,7 +22,6 @@
                     </div>
                     <?php endforeach; ?>
                 </div>
-                <span class="line"></span>
             </div>
         </section>
 
@@ -61,7 +60,6 @@
                             </ul>
                         </div>
                     </div>
-                    <span class="line" <?php if($fields['service_id'] == 'consultant') echo 'style="display: none;"'; ?>></span>
                 </div>
                 <?php endforeach; ?>
             </div>

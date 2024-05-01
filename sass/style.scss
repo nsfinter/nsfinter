@@ -715,14 +715,14 @@ footer {
 }
 
 .service-item {
-    background-color: rgba(244, 248, 250, 0.8);
+    padding-top: 2rem !important;
     h3 {
         counter-increment: title_no;
         position: relative;
         width: 100%;
         color: $base_color;
-        padding-top: 4rem;
-        padding-bottom: 3.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         padding-left: 1rem;
         font-weight: 600;
         border-bottom: 5px solid $base_color;
@@ -733,22 +733,25 @@ footer {
         }
         @include media(md) {
             font-size: 3rem;
+            padding-top: 4.0rem;
+            padding-bottom: 1.5rem;    
             padding-left: 14rem;
         }
         &::before {
             display: none;
             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
             font-style: italic;
+            color: rgba(230, 230, 230, 0.5);
             @include media(sm) {
                 display: block;
                 content: '0' counter(title_no);
                 position: absolute;
-                top: 0.8rem;
+                top: -2.2rem;
                 left: 10px;
                 font-size: 6rem;
             }
             @include media(md) {
-                top: -2.4rem;
+                top: -3.4rem;
                 font-size: 10rem;
             }
         }
@@ -756,12 +759,17 @@ footer {
 }
 
 .service-item-container {
+    background-color: #F4F8FA;
+    border-radius: 10px;
     margin-bottom: 70px;
     &:nth-last-child(1) {
         margin-bottom: 0;
     }
     @include media(md) {
         padding-top: 180px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
     }
     .service-item-wrapper {
         display: flex;
@@ -769,13 +777,13 @@ footer {
         margin-left: auto;
         padding: 20px;
         padding-bottom: 0;
-        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
         font-size: 1.0rem;
         @include media(md) {
             width: 750px;
             padding: 25px;
             padding-bottom: 0;    
+            background-color: rgba(255, 255, 255, 0.8);
             &.reverse {
                 margin-left: 0;
             }
@@ -785,7 +793,7 @@ footer {
             margin-bottom: 15px;
             padding-bottom: 10px;
             padding-left: 55px;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: bold;
             color: $base_color;
             &::before {
@@ -823,11 +831,12 @@ footer {
             @include media(md) {
                 position: absolute;
                 width: 650px;
+                padding: 25px;
                 z-index: -1;
                 &.reverse {
                     right: 0;
                     left: auto;
-                }    
+                }
             }
             img {
                 width: 100%;
