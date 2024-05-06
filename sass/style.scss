@@ -602,17 +602,26 @@ footer {
 /* Content */
 .about {
     text-align: center;
-    font-family: "Noto Serif JP", serif;
     p:nth-of-type(1) {
-        font-size: 2.0rem;
-        font-weight: 600;
+        font-family: "Noto Serif JP", serif;
+        font-size: 2.1rem;
+        font-weight: 400;
         letter-spacing: 2.0px;
         margin-bottom: 20px;
         color: $base_color;
+        &::after {
+            content: '';
+            width: 350px;
+            height: 2px;
+            margin: 30px auto 60px auto;
+            background-color: $base_color;
+            display: block;
+        }
     }
     p:nth-of-type(2) {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         line-height: 35px;
+        letter-spacing: 1.0px;
     }
 }
 /* --- */
@@ -725,8 +734,8 @@ footer {
         padding-bottom: 1rem;
         padding-left: 1rem;
         font-weight: 600;
-        border-bottom: 5px solid $base_color;
-        margin-bottom: 50px;
+        border-bottom: 3px solid $base_color;
+        margin-bottom: 25px;
         font-size: 2.5rem;
         @include media(sm) {
             padding-left: 9rem;
@@ -766,7 +775,7 @@ footer {
         margin-bottom: 0;
     }
     @include media(md) {
-        padding-top: 180px;
+        padding-top: 324px;
         padding-right: 25px;
         padding-bottom: 25px;
         padding-left: 25px;
@@ -791,15 +800,17 @@ footer {
         .service-item-title {
             position: relative;
             margin-bottom: 15px;
-            padding-bottom: 10px;
-            padding-left: 55px;
+            padding-left: 40px;
             font-size: 1.8rem;
             font-weight: bold;
             color: $base_color;
+            @include media(md) {
+                padding-left: 50px;
+            }
             &::before {
                 font-family: FontAwesome;
                 position: absolute;
-                top: 3px;
+                top: 1px;
                 left: 5px;
             }
             &.summary::before {
