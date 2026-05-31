@@ -624,6 +624,25 @@ footer {
         letter-spacing: 1.0px;
     }
 }
+
+.service-about {
+    p:nth-of-type(1) {
+        font-size: 2.0rem;
+        font-weight: 400;
+        letter-spacing: 2.0px;
+        margin-bottom: 50px;
+        line-height: 50px;
+        @include media(md) {
+            font-size: 3.5rem;
+            line-height: 80px;
+        }
+    }
+    p:nth-of-type(2) {
+        font-size: 1.0rem;
+        line-height: 35px;
+        letter-spacing: 1.0px;
+    }
+}
 /* --- */
 
 /* Service */
@@ -768,14 +787,12 @@ footer {
 }
 
 .service-item-container {
-    background-color: #F4F8FA;
-    border-radius: 10px;
     margin-bottom: 70px;
     &:nth-last-child(1) {
         margin-bottom: 0;
     }
     @include media(md) {
-        padding-top: 324px;
+        padding-top: 460px;
         padding-right: 25px;
         padding-bottom: 25px;
         padding-left: 25px;
@@ -786,10 +803,8 @@ footer {
         margin-left: auto;
         padding: 20px;
         padding-bottom: 0;
-        border-radius: 10px;
         font-size: 1.0rem;
         @include media(md) {
-            width: 750px;
             padding: 25px;
             padding-bottom: 0;    
             background-color: rgba(255, 255, 255, 0.8);

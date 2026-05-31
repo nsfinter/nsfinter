@@ -58,7 +58,7 @@ $(function(){
     $('.slick').slick({
       fade: true,
       autoplay: true,
-      speed: 1500,
+      speed: 5000,
       autoplaySpeed : 5000,
       pauseOnFocus: false,
       pauseOnHover: false,

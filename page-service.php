@@ -5,6 +5,7 @@
         <?php while(have_posts()): the_post(); ?>
         <section class="service js-fadein-trigger">
             <div class="content">
+                <!--
                 <h3 data-title="service" class="content-title content-title-align">事業紹介</h3>
                 <div class="box-item-container">
                     <?php
@@ -22,6 +23,10 @@
                     </div>
                     <?php endforeach; ?>
                 </div>
+                -->
+                <section class="service-about">
+                    <?php the_content(); ?>
+                </section>
             </div>
         </section>
 
@@ -36,7 +41,7 @@
                     <div class="service-item-wrapper <?php if($fields['service_id'] == 'web') echo 'reverse'; ?>">
                         <h4 class="service-item-title summary">サービス概要</h4>
                         <figure class="service-item-img <?php if($fields['service_id'] == 'web') echo 'reverse'; ?>">
-                            <img src="<?php echo $fields['service_img2'] ?>" alt="<?php echo $fields['service_img2_alt'] ?>">
+                            <img src="<?php echo $fields['service_img1'] ?>" alt="<?php echo $fields['service_img1_alt'] ?>">
                         </figure>
                         <div class="service-item-text">
                             <p><?php echo $fields['service_text'] ?></p>

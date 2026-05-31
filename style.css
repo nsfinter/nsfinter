@@ -642,6 +642,25 @@ footer .pagetop .pagetop-arrow {
   letter-spacing: 1px;
 }
 
+.service-about p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+@media screen and (min-width: 782px) {
+  .service-about p:nth-of-type(1) {
+    font-size: 3.5rem;
+    line-height: 80px;
+  }
+}
+.service-about p:nth-of-type(2) {
+  font-size: 1rem;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
 /* --- */
 /* Service */
 @media screen and (min-width: 782px) {
@@ -798,8 +817,6 @@ footer .pagetop .pagetop-arrow {
 }
 
 .service-item-container {
-  background-color: #F4F8FA;
-  border-radius: 10px;
   margin-bottom: 70px;
 }
 .service-item-container:nth-last-child(1) {
@@ -807,7 +824,7 @@ footer .pagetop .pagetop-arrow {
 }
 @media screen and (min-width: 782px) {
   .service-item-container {
-    padding-top: 324px;
+    padding-top: 460px;
     padding-right: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
@@ -819,12 +836,10 @@ footer .pagetop .pagetop-arrow {
   margin-left: auto;
   padding: 20px;
   padding-bottom: 0;
-  border-radius: 10px;
   font-size: 1rem;
 }
 @media screen and (min-width: 782px) {
   .service-item-container .service-item-wrapper {
-    width: 750px;
     padding: 25px;
     padding-bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
