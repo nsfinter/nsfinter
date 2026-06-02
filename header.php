@@ -47,17 +47,19 @@
     <header class="site-header">
         <div class="main-header">
             <div class="main-header-content">
-                <div class="site-branding">
-                    <div class="logo">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <div class="site-branding">
+                        <div class="logo">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                        </div>
+                        <div class="site-branding-wrapper">
+                            <h1 class="site-title">
+                                <?php bloginfo('name'); ?>
+                            </h1>
+                            <div class="site-description"><?php bloginfo('description') ?></div>
+                        </div>
                     </div>
-                    <div class="site-branding-wrapper">
-                        <h1 class="site-title">
-                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-                        </h1>
-                        <div class="site-description"><?php bloginfo('description') ?></div>
-                    </div>
-                </div>
+                </a>
 
                 <?php
                 wp_nav_menu( array( 
