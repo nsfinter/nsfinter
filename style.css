@@ -782,7 +782,7 @@ footer .pagetop .pagetop-arrow {
 }
 @media screen and (min-width: 576px) {
   .service-item h3 {
-    padding-left: 9rem;
+    padding-left: 6.5rem;
   }
 }
 @media screen and (min-width: 782px) {
@@ -790,7 +790,7 @@ footer .pagetop .pagetop-arrow {
     font-size: 3rem;
     padding-top: 4rem;
     padding-bottom: 1.5rem;
-    padding-left: 14rem;
+    padding-left: 6.5rem;
   }
 }
 .service-item h3::before {
@@ -804,15 +804,15 @@ footer .pagetop .pagetop-arrow {
     display: block;
     content: "0" counter(title_no);
     position: absolute;
-    top: -2.2rem;
+    top: -0.2rem;
     left: 10px;
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 782px) {
   .service-item h3::before {
-    top: -3.4rem;
-    font-size: 10rem;
+    top: 3.3rem;
+    font-size: 4rem;
   }
 }
 

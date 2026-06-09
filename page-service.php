@@ -24,9 +24,9 @@
                     <?php endforeach; ?>
                 </div>
                 -->
-                <section class="service-about">
+                <div class="service-about">
                     <?php the_content(); ?>
-                </section>
+                </div>
             </div>
         </section>
 
